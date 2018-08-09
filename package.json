@@ -1,5 +1,5 @@
 {
-  "name": "pac-resolver",
+  "name": "heed-pac-resolver",
   "version": "3.0.0",
   "description": "Generates an asynchronous resolver function from a PAC file",
   "main": "index.js",
@@ -17,8 +17,7 @@
     "test": "mocha --reporter spec"
   },
   "repository": {
-    "type": "git",
-    "url": "git://github.com/TooTallNate/node-pac-resolver.git"
+    "type": "git"   
   },
   "keywords": [
     "pac",
@@ -26,10 +25,5 @@
     "proxy",
     "resolve",
     "dns"
-  ],
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TooTallNate/node-pac-resolver/issues"
-  }
+  ]
 }

@@ -42,7 +42,12 @@ function isInNet (host, pattern, mask, fn) {
   dns.lookup(host, family, function (err, ip) {
     if (err) return fn(err);
     if (!ip) ip = '127.0.0.1';
-    var netmask = new Netmask(pattern, mask);
-    fn(null, netmask.contains(ip));
+
+    try {
+      var netmask = new Netmask(pattern, mask);
+      fn(null, netmask.contains(ip));
+    } catch (e) {
+      fn(null, false);
+    }
   });
 }
